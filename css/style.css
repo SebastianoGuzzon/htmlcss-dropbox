@@ -10,7 +10,11 @@ header{
   height: 80px;
   background-color: #FFFFFF;
 }
-
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header .container{
   display: flex;
   justify-content: space-between;
@@ -26,14 +30,14 @@ header .menu ul{
 
 header .menu ul li{
   margin: 0 15px;
+  display: flex;
 }
 
 header .menu ul li a{
   text-decoration: none;
   color: black;
-  
-
 }
+
 .btn-accedi{
   width: 100px;
   height: 50px;
@@ -44,9 +48,22 @@ header .menu ul li a{
 }
 
 .container-1{
-  max-width: 1200;
+  position: relative;
   margin: 0 auto;
   background-color: #B4D0E7;
   height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
 }
-
+.Titolo-1{
+  font-size:  3rem;
+}
+.prima-img{
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
