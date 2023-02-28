@@ -7,6 +7,15 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 100px;
+  color: white;
 }
 
 /* Header */
@@ -17,7 +26,7 @@ header{
 
 header .container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   color: white;
@@ -38,6 +47,7 @@ header .menu ul li a{
   color: black;
 }
 
+
 .container{
   width: 90%;
   max-width: 1200px;
@@ -55,7 +65,6 @@ color: white;
 
 /* Section */
 section{
-  padding:  50px 0;
   display: flex;
   position: relative;
 }
@@ -67,23 +76,23 @@ section{
   background-color: #B4D0E7;
   height: 500px;
   display: flex;
-  align-items: center;
+  align-content: flex-start;
   justify-content: space-around;
   padding: 50px;
+  
 }
 
 .Titolo-1{
   font-size:  3rem;
-  flex-direction: column;
 }
 
 .prima-img{
   width: 700px;
   height: 400px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  overflow: none;
+  
+}
+.image-first{
+  display: flex;
 }
 .btn-prova{
   width: 200px;
@@ -99,8 +108,49 @@ section{
 section.layout{
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 50px;
+  flex-direction: column
 }
 .bottoni-fatturaz{
   padding: 50px;
+}
+.colonne{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 500px;
+  justify-content: space-between;
+}
+
+.column-left{
+width: 100px;
+height: 700px;
+background-color: white;
+border: 1px solid black;
+}
+.column-right{
+width: 100px;
+height: 700px;
+background-color: white;
+border: 1px solid black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  border: 1px solid #D0D0D3;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box-un-colonne{
+  width: 60%;
+  height: 100px;
+  border: 1px solid black;
+  justify-content: center;
 }
